@@ -1,0 +1,12 @@
+Dear <%= name %>,
+
+Thanks so much for your purchase of:
+
+<% items.each do |item| %>
+  <%= item["quantity"] %> x <%= item["title"] %>
+<% end %>
+
+We've processed your payment for $<%= sprintf("%.2f", total) %>.
+
+We hope you stop by again!
+Frank's Monsterporium
